@@ -24,9 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-
+![Screenshot 2022-09-09 at 01-28-16 Frontend Mentor Testimonial Grid Section Main](https://user-images.githubusercontent.com/91544648/189254393-975ec725-19f5-4b91-8bee-f70738424dcf.png)
+![Screenshot 2022-09-09 at 01-31-19 Frontend Mentor Testimonial Grid Section Main](https://user-images.githubusercontent.com/91544648/189254396-30e81463-3523-4774-8dd7-c1ad304074cb.png)
 
 ### Links
 
