@@ -1,0 +1,181 @@
+:root{
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Dark-grayish-blue: hsl(217, 19%, 35%);
+  --Dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+@font-face {
+    font-family: 'Barlow Semi Condensed 500';
+    src: url(Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Barlow Semi Condensed 600';
+    src: url(Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
+    font-weight: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 88%;
+    background: var(--White);
+    margin: 5% auto;
+}
+
+.contents{
+    max-width: 1200px;
+    min-height: 70vh;
+}
+
+.profile{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.user img{
+    margin-right: 20px;
+}
+
+.testimonial{
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+
+.testimonial h4{
+    font-family: 'Barlow Semi Condensed 600', sans-serif;
+    line-height: 1.25em;
+    font-size: larger;
+}
+p{
+    line-height: 1.5em;
+    font-size: 13px;
+    opacity: 70%;
+    font-family: 'Barlow Semi Condensed 500', sans-serif;
+}
+
+.user-profile p{
+    opacity: 50%;
+}
+
+.verified-graduate{
+    border-radius: 10px;
+    margin: 25px auto;
+    padding: 18px;
+    position: relative;
+    box-shadow: 3px 4px 25px 3px hsla(219, 15%, 55%, 0.2);
+    min-width: 330px;
+    align-items: flex-start;
+}
+
+.one{
+    color: var(--Light-gray);
+    background: var(--Moderate-violet);
+    background-image: url('images/bg-pattern-quotation.svg');
+    background-position: top right;
+    background-position-x: 80%;
+    background-repeat: no-repeat;
+}
+
+.one h4{
+    font-family: 'Barlow Semi Condensed 600', sans-serif;
+    color: #fff;
+}
+
+.one img{
+    border: 2px solid #a775f1;
+}
+
+.two{
+    color: var(--Light-grayish-blue);
+    background-color: var(--Dark-grayish-blue);
+}
+
+.three{
+    color: var(--Dark-grayish-blue);
+    background: var(--White);
+}
+
+.four{
+    color: var(--Light-grayish-blue);
+    background: var(--Dark-blackish-blue);
+}
+
+.four img{
+    border: 3px solid var(--Moderate-violet);
+}
+
+.five{
+    color: var(--Dark-grayish-blue);
+    background: var(--White);
+}
+.user p{
+    margin-top: 3px;
+}
+.testimonial h4, .testimonial p{
+    padding: 10px;
+}
+
+h5{
+    font-family: 'Barlow Semi Condensed 600', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width : 900px) {
+    .contents{
+        display: grid;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+    }
+
+    .verified-graduate{
+        margin: 25px 15px;
+        min-width: fit-content;
+    }
+
+    .one{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .two{
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+    .three{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .four{
+        grid-row: 2/3;
+        grid-column: 2/4;
+    }
+    .five{
+        grid-row: 1/3;
+        grid-column: 4/5;
+    }
+}
